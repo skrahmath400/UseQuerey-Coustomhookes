@@ -12,6 +12,10 @@ import Colorchange from './components/Coustomhoole2example';
 import Implementation from './components/Cities';
 import CampusImplementaion from './components/Citiescoutom';
 import Handlingusestate from './components/usestatteexample';
+import Applyingfunctioncall from './components/Campuswriteusage';
+import Updatecampusdetails from './components/Campusupdatedetais';
+import DeleteCampus from './components/Campusdeleteing';
+// import Applyingfunctioncall from './components/Campuswriteusage';
 
  const queryClient =new QueryClient({
     
@@ -37,13 +41,14 @@ function App() {
 
       </nav>
     <Routes>
-
-  <Route path='/' element={<><Counter/><AnotherCounter/><Display/> <Colorchange/> <Implementation/> <Handlingusestate/> </>}/>
-  <Route path='singleexample'element={<FormWithFromik/>}/>
+{/* 
+  <Route path='/' element={<><Counter/><AnotherCounter/><Display/> <Colorchange/> <Implementation/>  </>}/> */}
+  {/* <Route path='singleexample'element={<FormWithFromik/>}/>
   <Route path='/formsbootstrap' element={  <Bootstrap_from/>}></Route>
   <Route path='/checkboxexample' element={<CheckboxExample/>  }></Route>
     <Route path='/example' element={  <Examples/>  }></Route>
-    <Route path='/Campus' element={< CampusImplementaion/>}></Route>
+    <Route path='/Campus' element={< CampusImplementaion/>}></Route> */}
+    <Route path='/Campus/postdata' element={<> <Applyingfunctioncall/><Implementation/> <Updatecampusdetails/> <DeleteCampus/> </> }></Route>
     
   </Routes>
  
